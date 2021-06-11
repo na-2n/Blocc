@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blocc.Resources\Blocc.Resources.csproj" />
+    <ProjectReference Include="..\Blocc.Engine\Blocc.Engine.csproj" />
+  </ItemGroup>
+
+</Project>

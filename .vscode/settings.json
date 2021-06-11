@@ -1,0 +1,9 @@
+{
+    "csharpfixformat.style.braces.onSameLine": false,
+    "csharpfixformat.style.spaces.beforeParenthesis": false,
+    "csharpfixformat.style.spaces.beforeIndexerBracket": false,
+    "csharpfixformat.style.spaces.afterBracket": false,
+    "csharpfixformat.style.spaces.afterParenthesis": false,
+    "omnisharp.enableEditorConfigSupport": true,
+    "omnisharp.enableRoslynAnalyzers": true,
+}

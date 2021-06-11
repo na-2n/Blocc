@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Silk.NET" Version="1.1.1" />
+
+    <!-- TODO: replace with custom PNG/JPEG reader -->
+    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.0-beta0007" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blocc.Engine.Common\Blocc.Engine.Common.csproj" />
+    <ProjectReference Include="..\Blocc.Engine.OpenGL\Blocc.Engine.OpenGL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Terrain\TerrainGenerator.OLD.cs" />
+    <None Include="Terrain\TerrainGenerator.OLD.cs" />
+  </ItemGroup>
+
+</Project>

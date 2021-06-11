@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Silk.NET" Version="1.1.1" />
+
+    <!-- TODO: replace with custom PNG/JPEG reader -->
+    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.0-beta0007" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blocc.Game\Blocc.Game.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="libglfw.so.3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
